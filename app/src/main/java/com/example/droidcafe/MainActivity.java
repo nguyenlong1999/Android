@@ -2,6 +2,7 @@ package com.example.droidcafe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -35,8 +36,12 @@ public class MainActivity extends AppCompatActivity {
     public void showOrderActivity(View view) {
         if (mOrderMessage == "") {
             Toast.makeText(this, "Please choose a droid desserts", Toast.LENGTH_SHORT).show();
+            return;
         }
         Toast.makeText(this, mOrderMessage, Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this,OrderActivity.class);
+        startActivity(intent);
 
     }
 }
