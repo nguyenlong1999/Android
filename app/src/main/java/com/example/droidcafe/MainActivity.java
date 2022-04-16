@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static final String EXTRA_MESSAGE = "GIO_HANG";
     String mOrderMessage;
 
     @Override
@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, mOrderMessage, Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(this,OrderActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
+
         startActivity(intent);
 
     }
