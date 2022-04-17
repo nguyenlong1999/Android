@@ -6,4 +6,7 @@
     <string name="donut_order_message">You ordered a donut.</string>
     <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
     <string name="froyo_order_message">You ordered a FroYo.</string>
+    <string name="pickup">Giao hàng lấy ngay</string>
+    <string name="nextday">Giao hàng ngày hôm sau</string>
+    <string name="sameday">Giao hàng trong ngày</string>
 </resources>
