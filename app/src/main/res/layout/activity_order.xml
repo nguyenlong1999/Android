@@ -79,12 +79,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginEnd="24dp"
         android:ems="10"
         android:hint="Enter your phone"
         android:inputType="phone"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_phone"
         app:layout_constraintStart_toEndOf="@+id/textView7" />
 
     <TextView
@@ -150,4 +149,14 @@
             android:layout_height="wrap_content"
             android:text="@string/pickup" />
     </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phone_text" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
